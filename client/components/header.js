@@ -1,4 +1,5 @@
 import React, { Component }  from 'react';
+import Accounts from './accounts';
 
 class Header extends Component {
    constructor() {
@@ -12,7 +13,7 @@ class Header extends Component {
             </div>
             <ul className="nav navbar-nav">
                <li>
-                  <a href="">Signup</a>
+                  <Accounts />
                </li>
                <li>
                   <a href="">Create Bin</a>
