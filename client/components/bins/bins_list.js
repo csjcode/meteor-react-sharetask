@@ -6,11 +6,21 @@ class BinsList extends Component {
    constructor() {
       super();
    }
+   onBinRemove(bin){
+            Meteor.call('bins.remove', bin)
+   }
    renderList(){
       return this.props.bins.map(bin => {
          return (
             <li className="list-group-item" key={bin._id}>
                Bin {bin._id}
+               <span className="pull-right">
+                  <button
+                     className="btn btn-danger"
+                     onClick={() => this.onBinRemove(bin)}>
+                     Remove
+                  </button>
+               </span>
             </li>
          );
       });
