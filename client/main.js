@@ -10,7 +10,8 @@ import { Bins } from '../imports/collections/bins';
 const routes = (
       <Router history={browserHistory}>
          <Route path="/" component={App}>
-               <Route path="bins" component={BinsMain} />
+            <IndexRoute component={BinsList} />
+            <Route path="bins" component={BinsMain} />
          </Route>
       </Router>
 );
