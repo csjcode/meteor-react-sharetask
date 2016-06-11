@@ -1,5 +1,6 @@
 import React, { Component }  from 'react';
 import Accounts from './accounts';
+import { Link } from 'react-router';
 
 class Header extends Component {
    constructor() {
@@ -8,7 +9,7 @@ class Header extends Component {
 
    onBinClick(event) {
       event.preventDefault();
-      
+
       Meteor.call('bins.insert')
    }
 
@@ -17,7 +18,7 @@ class Header extends Component {
       return (
          <nav className="nav navbar-default">
             <div className="navbar-header">
-               <a href="" className="navbar-brand">ShareTask</a>
+               <Link to="/" href="" className="navbar-brand">ShareTask</Link>
             </div>
             <ul className="nav navbar-nav">
                <li>
