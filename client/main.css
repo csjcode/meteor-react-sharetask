@@ -1,6 +1,11 @@
+#login-buttons a, .accounts-dialog a{
+   text-decoration:none;
+}
+
 #login-buttons {
    margin: 18px;
    font-size:14px;
+   text-decoration:none;
 }
 
 .list-group-item {
@@ -9,4 +14,6 @@
 
 #login-name-link {
    color: #2D9BEE;
+   position: relative;
+   top: -7px;
 }
