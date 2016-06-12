@@ -18,18 +18,18 @@ class Header extends Component {
 
    render(){
       return (
-         <nav className="nav navbar-default">
-            <div className="navbar-header">
-               <Link to="/" href="" className="navbar-brand">ShareTask</Link>
+         <nav>
+            <div className="nav-wrapper">
+               <Link to="/" href="" className="brand-logo">ShareTask</Link>
+               <ul className="right hide-on-med-and-down">
+                  <li>
+                     <Accounts />
+                  </li>
+                  <li>
+                     <a href="#" onClick={this.onBinClick.bind(this)}>Create Bin</a>
+                  </li>
+               </ul>
             </div>
-            <ul className="nav navbar-nav">
-               <li>
-                  <Accounts />
-               </li>
-               <li>
-                  <a href="#" onClick={this.onBinClick.bind(this)}>Create Bin</a>
-               </li>
-            </ul>
          </nav>
       );
    }
