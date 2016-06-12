@@ -31,7 +31,8 @@ class BinsList extends Component {
    render() {
       // console.log(this.props.bins)
       return (
-         <ul className="collection">
+         <ul className="collection with-header">
+            <li className="collection-header"><h4>Markdown ShareTasks</h4></li>
             {this.renderList()}
          </ul>
       );
