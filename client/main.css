@@ -13,7 +13,12 @@
 }
 
 #login-name-link {
-   color: #2D9BEE;
+   /*color: #2D9BEE;*/
+   position: relative;
+   /*top: -7px;*/
+}
+
+.btn__remove {
    position: relative;
    top: -7px;
 }

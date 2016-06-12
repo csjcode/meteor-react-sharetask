@@ -21,7 +21,7 @@ class Header extends Component {
          <nav>
             <div className="nav-wrapper">
                <Link to="/" href="" className="brand-logo">ShareTask</Link>
-               <ul className="right hide-on-med-and-down">
+               <ul className="right hide-on-sm-and-down">
                   <li>
                      <Accounts />
                   </li>

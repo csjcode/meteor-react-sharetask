@@ -14,11 +14,11 @@ class BinsList extends Component {
       return this.props.bins.map(bin => {
          const urlBin = `/bins/${bin._id}`;
          return (
-            <li className="list-group-item" key={bin._id}>
+            <li className="collection-item" key={bin._id}>
                <Link to={urlBin}>Bin {bin._id}</Link>
-               <span className="pull-right">
+               <span className="secondary-content">
                   <button
-                     className="btn #b71c1c red darken-4 white-text waves-effect waves-light"
+                     className="btn btn__remove #b71c1c red darken-4 white-text waves-effect waves-light"
                      onClick={() => this.onBinRemove(bin)}>
                      Remove
                   </button>
@@ -31,7 +31,7 @@ class BinsList extends Component {
    render() {
       // console.log(this.props.bins)
       return (
-         <ul className="list-group">
+         <ul className="collection">
             {this.renderList()}
          </ul>
       );
