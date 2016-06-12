@@ -18,9 +18,9 @@ class BinsList extends Component {
                <span className="collection-item-bin hoverable">Bin# <Link to={urlBin} className="">{bin._id}</Link></span>
                <span className="secondary-content">
                   <button
-                     className="btn btn__remove #b71c1c red darken-4 white-text waves-effect waves-light"
+                     className="btn btn__remove btn-floating #b71c1c red darken-4 white-text waves-effect waves-light"
                      onClick={() => this.onBinRemove(bin)}>
-                     Remove
+                     <i className="material-icons">delete</i>
                   </button>
                </span>
             </li>
