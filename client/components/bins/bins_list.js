@@ -15,7 +15,7 @@ class BinsList extends Component {
          const urlBin = `/bins/${bin._id}`;
          return (
             <li className="collection-item" key={bin._id}>
-               <Link to={urlBin}>Bin {bin._id}</Link>
+               <span className="collection-item-bin hoverable">Bin# <Link to={urlBin} className="">{bin._id}</Link></span>
                <span className="secondary-content">
                   <button
                      className="btn btn__remove #b71c1c red darken-4 white-text waves-effect waves-light"

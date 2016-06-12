@@ -23,10 +23,10 @@ class Header extends Component {
                <Link to="/" href="" className="brand-logo">ShareTask</Link>
                <ul className="right hide-on-sm-and-down">
                   <li>
-                     <Accounts />
+                     <a href="#" onClick={this.onBinClick.bind(this)}>Create Bin</a>
                   </li>
                   <li>
-                     <a href="#" onClick={this.onBinClick.bind(this)}>Create Bin</a>
+                     <Accounts />
                   </li>
                </ul>
             </div>
