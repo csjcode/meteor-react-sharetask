@@ -6,3 +6,7 @@
 .list-group-item {
    height:55px;
 }
+
+#login-name-link {
+   color: #2D9BEE;
+}

@@ -18,7 +18,7 @@ class BinsList extends Component {
                <Link to={urlBin}>Bin {bin._id}</Link>
                <span className="pull-right">
                   <button
-                     className="btn btn-danger"
+                     className="btn #b71c1c red darken-4 white-text waves-effect waves-light"
                      onClick={() => this.onBinRemove(bin)}>
                      Remove
                   </button>
