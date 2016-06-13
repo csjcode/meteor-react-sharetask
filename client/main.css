@@ -13,6 +13,10 @@ nav {
    background: #03A9F4;
 }
 
+.brand-logo {
+   margin-left:10px;
+}
+
 #login-buttons a, .accounts-dialog a {
    text-decoration:none;
 }
@@ -39,5 +43,6 @@ nav {
 }
 
 .collection-item-bin {
-   padding: 6px;
+   padding: 10px;
+   font-size:16px
 }
