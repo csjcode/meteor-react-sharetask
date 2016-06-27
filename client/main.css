@@ -13,6 +13,10 @@ nav {
    background: #03A9F4;
 }
 
+.container{
+   width:100%;
+}
+
 .brand-logo {
    margin-left:10px;
 }
@@ -44,5 +48,11 @@ nav {
 
 .collection-item-bin {
    padding: 10px;
-   font-size:16px
+   font-size:16px;
+}
+
+.bins-share {
+   position: absolute;
+   bottom: 0;
+   width:100%;
 }

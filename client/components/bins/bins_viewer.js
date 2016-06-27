@@ -8,10 +8,11 @@ class BinsViewer extends Component {
    render(){
       const rawHTML = markdown.toHTML(this.props.bin.content);
       return (
-         <div className="col-xs-4">
-            <h5>Viewer</h5>
-            <div dangerouslySetInnerHTML={{__html:rawHTML}}></div>
-         </div>
+            <div className="col s6">
+               <h5>Viewer</h5>
+               <div dangerouslySetInnerHTML={{__html:rawHTML}}></div>
+            </div>
+
       );
    }
 }
