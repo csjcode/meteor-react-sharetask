@@ -33,7 +33,7 @@ class BinsShare extends Component {
           <div>
             Shared With:
           </div>
-          <div>
+          <div className="bins-share-list">
             {this.renderShareList()}
           </div>
         </form>
