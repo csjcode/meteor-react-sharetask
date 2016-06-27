@@ -7,16 +7,19 @@ class BinsShare extends Component {
   constructor() {
     super();
   }
+  onShareClick(){
+    const email = this.refs.email.value;
+  }
   render(){
     return (
       <footer className="bins-share">
         <form className="col s6">
           <div className="row">
             <div className="col s8">
-              <input placeholder="Share stuff" id="" type="text" class="validate" />
+              <input ref="email" placeholder="Share stuff" id="" type="text" class="validate" />
             </div>
             <div className="col s4">
-              <a className="waves-effect waves-light btn">Share Task</a>
+              <a className="waves-effect waves-light btn" onClick={this.onShareClick.bind(this)}>Share Task</a>
             </div>
           </div>
         </form>
