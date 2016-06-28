@@ -18,6 +18,11 @@ class BinsList extends Component {
                <span className="collection-item-bin hoverable">Bin# <Link to={urlBin} className="">{bin._id}</Link></span>
                <span className="secondary-content">
                   <button
+                     className="btn btn__mode_edit btn-floating #b71c1c blue darken-4 white-text waves-effect waves-light"
+                     >
+                     <i className="material-icons">mode_edit</i>
+                  </button>
+                  <button
                      className="btn btn__remove btn-floating #b71c1c red darken-4 white-text waves-effect waves-light"
                      onClick={() => this.onBinRemove(bin)}>
                      <i className="material-icons">delete</i>
@@ -32,7 +37,7 @@ class BinsList extends Component {
       // console.log(this.props.bins)
       return (
          <ul className="collection with-header">
-            <li className="collection-header"><h4>Markdown ShareTasks</h4></li>
+            <li className="collection-header"><h4>Share Tasks</h4></li>
             {this.renderList()}
          </ul>
       );
