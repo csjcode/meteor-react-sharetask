@@ -5,5 +5,16 @@ Meteor.startup(() => {
   // code to run on server at startup
   Meteor.publish('bins', function(){
     return Bins.find({ ownerId: this.userId});
- });
+  });
+  Meteor.publish('sharedBins', function(){
+    const user = Meteor.users.findOne(this.userId);
+
+    if(!user){ return ;}
+
+    const email = user.emails[0].address;
+
+    return Bin.find({
+      sharedWith: { $elemMatch: { $eq: email }}
+    });
+  });
 });
