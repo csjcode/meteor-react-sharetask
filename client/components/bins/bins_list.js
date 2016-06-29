@@ -17,11 +17,12 @@ class BinsList extends Component {
             <li className="collection-item" key={bin._id}>
                <span className="collection-item-bin hoverable">Bin# <Link to={urlBin} className="">{bin._id}</Link></span>
                <span className="secondary-content">
-                  <button
-                     className="btn btn__mode_edit btn-floating #b71c1c blue darken-4 white-text waves-effect waves-light"
-                     >
-                     <i className="material-icons">mode_edit</i>
-                  </button>
+                  <Link to={urlBin}>
+                     <a
+                        className="btn btn__mode_edit btn-floating #b71c1c blue darken-4 white-text waves-effect waves-light">
+                        <i className="material-icons">mode_edit</i>
+                     </a>
+                  </Link>
                   <button
                      className="btn btn__remove btn-floating #b71c1c red darken-4 white-text waves-effect waves-light"
                      onClick={() => this.onBinRemove(bin)}>
